@@ -92,19 +92,19 @@ Job {
 
     @Override
     public String toString() {
-        if (location.getValue() == "" || location.getValue() == null)  {
+        if (location.getValue().equals("") || location.getValue() == null)  {
             location = new Location ("Data not available");
         }
-        if (employer.getValue() == "" || employer.getValue() == null)  {
+        if (employer.getValue().equals("") || employer.getValue() == null)  {
             employer = new Employer ("Data not available");
         }
-        if (positionType.getValue() == "" || positionType.getValue() == null)  {
+        if (positionType.getValue().equals("") || positionType.getValue() == null)  {
             positionType = new PositionType ("Data not available");
         }
-        if (coreCompetency.getValue() == "" || coreCompetency.getValue() == null)  {
+        if (coreCompetency.getValue().equals("") || coreCompetency.getValue() == null)  {
             coreCompetency = new CoreCompetency ("Data not available");
         }
-        if (name == "" || name == null)  {
+        if (name.equals(""))  {
             name = ("Data not available");
         }
         return "\n ID: " + id +
